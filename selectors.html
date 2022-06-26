@@ -1,0 +1,61 @@
+<!-- Universal selector -->
+
+<div>Hello World</div>
+<div>I am Ace</div>
+
+<style>
+    *{
+        color: blue
+    }
+</style>
+
+<!-- Using Class, ID, and their Selectors -->
+<p>
+<div class="paragraph">Hello World</div>
+<div id="Name">I am Ace</div>
+</p>
+
+<style>
+    .paragraph{
+        color: red
+    }
+    
+    #Name{
+        color: green
+    }
+</style>
+
+
+<!-- Grouping Selectors -->
+<!-- This allows selecting specific element with the same first class name -->
+<p>
+    <div class="Class One">Hello World</div>
+    <div class="Class Two">I am Ace</div>
+</p>
+
+<style>
+    .Class.One{
+        color: black
+    }
+</style>
+
+
+<!-- Selecting Child elements from a Nest -->
+<!-- There must be spaces between selectors -->
+
+<div class="grandfather">
+    Grandfather
+    <div class="father">
+        Father
+        <div class="son">
+            Son
+        </div>
+    </div>
+</div>
+
+<style>
+    .grandfather .father .son {
+        color: orange
+    }
+
+</style>
