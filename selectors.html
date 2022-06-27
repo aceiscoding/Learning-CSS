@@ -59,3 +59,58 @@
     }
 
 </style>
+
+<!-- Cascade of CSS -->
+
+<p>
+<div class="grandmother frog"> 
+    I am grandmother
+    <div class="mother">
+        I am mother
+        <div class="daughter">
+            I am daughter
+        </div>
+    </div>
+</div>
+</p>
+
+<style>
+    /* chain selector */
+    .grandmother.frog {
+        color: red
+    }
+
+    /* using child combinator to specifically target one element in a cascade */
+    .grandmother > .mother{
+        color: green
+    }
+
+</style>
+
+
+<!-- Class versus ID -->
+
+
+<p>
+    <div id="grandmother"> 
+        I am grandmother
+        <div class="mother bird">
+            I am mother
+            <div class="daughter bird">
+                I am daughter
+            </div>
+        </div>
+    </div>
+</p>
+
+<style>
+    #grandmother {
+        color: green;
+        
+
+    }
+
+    .daughter {
+        color: orange
+    }
+</style>
