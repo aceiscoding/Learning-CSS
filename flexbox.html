@@ -1,0 +1,166 @@
+<div class="motherbox">
+    <div class="genboxone">
+        <div class="item1"></div>
+        <div class="item2">
+            <div class="smallbox"></div>
+            <div class="smallbox"></div>
+        </div>
+        <div class="item3"></div>
+    </div>
+    <div class="mid">     
+        <div class="genboxtwo left"></div>
+        <div class ="twins">
+            <div class="genboxtwo mid above"></div>
+            <div class="genboxtwo mid below"></div>
+        </div>
+    </div>
+    <div class="genboxthree">
+        <div class="bboxleft"></div>
+        <div class="bboxmid1"></div>
+        <div class="bboxmid2"></div>
+        <div class="bboxright"></div>
+    </div>
+    
+</div>
+
+
+<style>
+    .motherbox {
+        background: rgb(180, 234, 180);
+        border: 3px solid green;
+    
+    }
+
+
+    .genboxone {
+        background: rgb(178, 214, 255);
+        border: 3px solid blue;
+        height: 70;
+        margin: 10;
+        display: flex;
+        padding: 8;
+       
+        
+
+    }
+
+    .genboxtwo {
+        background: rgb(255, 178, 178);
+        border: 3px solid rgb(178, 18, 15);
+        height: 150;
+        flex: 1;
+        
+        
+    }
+
+    .genboxtwo.left {
+        margin-right: 10;
+   
+    }
+
+
+    .genboxthree {
+        background: rgb(178, 214, 255);
+        border: 3px solid blue;
+        height: 70;
+        margin: 10;
+        display: flex;
+        flex: 1;
+    }
+
+    .item1 {
+        background: rgb(254, 210, 173);
+        border: 3px solid rgb(238, 135, 56);
+        margin: 8px;
+        flex: 1;
+
+
+    }
+
+    .item2 {
+        background: rgb(254, 210, 173);
+        border: 3px solid rgb(238, 135, 56);
+        margin: 8px;
+        flex: 1;
+        display: flex;
+        padding: 3;
+    }
+
+    .item3 {
+        background: rgb(254, 210, 173);
+        border: 3px solid rgb(238, 135, 56);
+        margin: 8px;
+        flex: 1;
+    }
+    
+    .smallbox {
+        background: rgb(254, 182, 173);
+        border: 3px solid rgb(240, 15, 15);
+        flex: 1;
+
+    }
+
+    .mid {
+        display: flex;
+        padding-left: 10;
+        padding-right: 10;
+        flex: 1;
+
+        
+
+    }
+
+    .twins {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+    
+    }
+
+    .genboxtwo.mid.above {
+        margin-bottom: 10;
+        
+    }
+
+    .bboxleft {
+        background: rgb(247, 224, 255);
+        border: 3px solid rgb(147, 56, 238);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        flex: 1;
+    }
+
+    .bboxmid1 {
+        background: rgb(254, 210, 173);
+        border: 3px solid rgb(238, 135, 56);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 4;
+        margin-right: 2;
+        width: 90
+    }
+
+    .bboxmid2 {
+        background: rgb(254, 210, 173);
+        border: 3px solid rgb(238, 135, 56);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 2;
+        margin-right: 4;
+        width: 90
+
+    }
+
+    .bboxright {
+        background: rgb(247, 224, 255);
+        border: 3px solid rgb(147, 56, 238);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+        flex: 1;
+    }
+
+    
+</style>
